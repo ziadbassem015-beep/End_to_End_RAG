@@ -1,0 +1,592 @@
+[
+  {
+    "page": 1,
+    "page_description": "Empty or OCR-unreadable page",
+    "content_preview": ""
+  },
+  {
+    "page": 2,
+    "page_description": "Machine Learning Yearning is a deeplearning.ai project. © 2018 Andrew Ng. All Rights Reserved. Page 2 Machine Learning Yearning-Draft Andrew Ng Deeplearning.AI...",
+    "content_preview": "Machine Learning Yearning is a  \ndeeplearning.ai project. \n \n \n \n \n \n \n \n \n \n \n© 2018 Andrew Ng. All Rights Reserved. \n \n  \nPage 2 Machine Learning Yearning-Draft Andrew Ng \nDeeplearning.AI"
+  },
+  {
+    "page": 3,
+    "page_description": "Table of Contents 1 Why Machine Learning Strategy 2 How to use this book to help your team 3 Prerequisites and Notation 4 Scale drives...",
+    "content_preview": "Table of Contents \n \n1 Why Machine Learning Strategy \n2 How to use this book to help your team \n3 Prerequisites and Notation \n4 Scale drives machine learning progress \n5 Your development and test sets \n6 Your dev and test sets should come from the same distribution \n7 How large do the dev/test sets "
+  },
+  {
+    "page": 4,
+    "page_description": "26 Error analysis on the training set 27 Techniques for reducing variance 28 Diagnosing bias and variance: Learning curves 29 Plotting training error 30 Interpreting...",
+    "content_preview": "26 Error analysis on the training set \n27 Techniques for reducing variance \n28 Diagnosing bias and variance: Learning curves \n29 Plotting training error \n30 Interpreting learning curves: High bias \n31 Interpreting learning curves: Other cases \n32 Plotting learning curves \n33 Why we compare to human-"
+  },
+  {
+    "page": 5,
+    "page_description": "52 Directly learning rich outputs 53 Error analysis by parts 54 Attributing error to one part 55 General case of error attribution 56 Error analysis...",
+    "content_preview": "52 Directly learning rich outputs \n53 Error analysis by parts \n54 Attributing error to one part \n55 General case of error attribution \n56 Error analysis by parts and comparison to human-level performance \n57 Spotting a flawed ML pipeline \n58 Building a superhero team - Get your teammates to read thi"
+  },
+  {
+    "page": 6,
+    "page_description": "1 Why Machine Learning Strategy Machine learning is the foundation of countless important applications, including web search, email anti-spam, speech recognition, product recommendations, and more....",
+    "content_preview": "1 Why Machine Learning Strategy \n \nMachine learning is the foundation of countless important applications, including web \nsearch, email anti-spam, speech recognition, product recommendations, and more. I assume \nthat you or your team is working on a machine learning application, and that you want to"
+  },
+  {
+    "page": 7,
+    "page_description": "• Try a smaller neural network. • Try adding regularization (such as L2 regularization). • Change the neural network architecture (activation function, number of hidden...",
+    "content_preview": "• Try a smaller neural network. \n• Try adding regularization (such as L2 regularization).  \n• Change the neural network architecture (activation function, number of hidden units, etc.) \n• …  \nIf you choose well among these possible directions, you’ll build the leading cat picture \nplatform, and lead"
+  },
+  {
+    "page": 8,
+    "page_description": "2 How to use this book to help your team After finishing this book, you will have a deep understanding of how to set technical...",
+    "content_preview": "2 How to use this book to help your team \n \nAfter finishing this book, you will have a deep understanding of how to set technical \ndirection for a machine learning project.  \nBut your teammates might not understand why you’re recommending a particular direction. \nPerhaps you want your team to define"
+  },
+  {
+    "page": 9,
+    "page_description": "3 Prerequisites and Notation If you have taken a Machine Learning course such as my machine learning MOOC on Coursera, or if you have experience...",
+    "content_preview": "3 Prerequisites and Notation \n \nIf you have taken a Machine Learning course such as my machine learning MOOC on \nCoursera, or if you have experience applying supervised learning, you will be able to \nunderstand this text.  \nI assume you are familiar with ​supervised learning​: learning a function th"
+  },
+  {
+    "page": 10,
+    "page_description": "4 Scale drives machine learning progress Many of the ideas of deep learning (neural networks) have been around for decades. Why are these ideas taking...",
+    "content_preview": "4 Scale drives machine learning progress \n \nMany of the ideas of deep learning (neural networks) have been around for decades. Why are \nthese ideas taking off now?  \nTwo of the biggest drivers of recent progress have been: \n• Data availability.​ People are now spending more time on digital devices ("
+  },
+  {
+    "page": 11,
+    "page_description": "Here, by “Small NN” we mean a neural network with only a small number of hidden units/layers/parameters. Finally, if you train larger and larger neural...",
+    "content_preview": "Here, by “Small NN” we mean a neural network with only a small number of hidden \nunits/layers/parameters. Finally, if you train larger and larger neural networks, you can \nobtain even better performance:  \n1\n \nThus, you obtain the best performance when you (i) Train a very large neural network, so \n"
+  },
+  {
+    "page": 12,
+    "page_description": "The process of how to accomplish (i) and (ii) are surprisingly complex. This book will discuss the details at length. We will start with general...",
+    "content_preview": "The process of how to accomplish (i) and (ii) are surprisingly complex. This book will discuss \nthe details at length. We will start with general strategies that are useful for both traditional \nlearning algorithms and neural networks, and build up to the most modern strategies for \nbuilding deep le"
+  },
+  {
+    "page": 13,
+    "page_description": "Setting up development and test sets Page 13 Machine Learning Yearning-Draft Andrew Ng",
+    "content_preview": "Setting up \ndevelopment and \ntest sets  \nPage 13 Machine Learning Yearning-Draft Andrew Ng"
+  },
+  {
+    "page": 14,
+    "page_description": "5 Your development and test sets Let’s return to our earlier cat pictures example: You run a mobile app, and users are uploading pictures of...",
+    "content_preview": "5 Your development and test sets \n \nLet’s return to our earlier cat pictures example: You run a mobile app, and users are \nuploading pictures of many different things to your app. You want to automatically find the \ncat pictures.  \nYour team gets a large training set by downloading pictures of cats "
+  },
+  {
+    "page": 15,
+    "page_description": "our example above) is different from the distribution you ultimately care about (mobile phone images). We usually define: • Training set​ — Which you run...",
+    "content_preview": "our example above) is different from the distribution you ultimately care about (mobile \nphone images). \nWe usually define: \n• Training set​ — Which you run your learning algorithm on. \n• Dev (development) set​ — Which you use to tune parameters, select features, and \nmake other decisions regarding "
+  },
+  {
+    "page": 16,
+    "page_description": "examples that reflect what you ultimately want to perform well on, rather than whatever data you happen to have for training. Page 16 Machine Learning...",
+    "content_preview": "examples that reflect what you ultimately want to perform well on, rather than whatever data \nyou happen to have for training.  \n \n  \nPage 16 Machine Learning Yearning-Draft Andrew Ng"
+  },
+  {
+    "page": 17,
+    "page_description": "6 Your dev and test sets should come from the same distribution You have your cat app image data segmented into four regions, based on...",
+    "content_preview": "6 Your dev and test sets should come from the \nsame distribution \nYou have your cat app image data segmented into four regions, based on your largest \nmarkets: (i) US, (ii) China, (iii) India, and (iv) Other. To come up with a dev set and a test \nset, say we put US and India in the dev set; China an"
+  },
+  {
+    "page": 18,
+    "page_description": "3. The test set is not necessarily harder, but just different, from the dev set. So what works well on the dev set just does...",
+    "content_preview": "3. The test set is not necessarily harder, but just different, from the dev set. So what works \nwell on the dev set just does not work well on the test set. In this case, a lot of your work \nto improve dev set performance might be wasted effort.  \nWorking on machine learning applications is hard eno"
+  },
+  {
+    "page": 19,
+    "page_description": "7 How large do the dev/test sets need to be? The dev set should be large enough to detect differences between algorithms that you are...",
+    "content_preview": "7 How large do the dev/test sets need to be? \n \nThe dev set should be large enough to detect differences between algorithms that you are \ntrying out. For example, if classifier A has an accuracy of 90.0% and classifier B has an \naccuracy of 90.1%, then a dev set of 100 examples would not be able to "
+  },
+  {
+    "page": 20,
+    "page_description": "8 Establish a single-number evaluation metric for your team to optimize Classification accuracy is an example of a ​single-number evaluation metric​: You run your classifier...",
+    "content_preview": "8 Establish a single-number evaluation metric \nfor your team to optimize  \n \nClassification accuracy is an example of a ​single-number evaluation metric​: You run \nyour classifier on the dev set (or test set), and get back a single number about what fraction \nof examples it classified correctly. Acc"
+  },
+  {
+    "page": 21,
+    "page_description": "score,” which is a modified way of computing their average, and works better than simply taking the mean. 4 Classifier Precision Recall F1 score A...",
+    "content_preview": "score,” which is a modified way of computing their average, and works better than simply \ntaking the mean.  4\n \nClassifier  Precision  Recall  F1 score \nA  95% 90% 92.4% \nB  98% 85% 91.0% \n \nHaving a single-number evaluation metric speeds up your ability to make a decision when \nyou are selecting am"
+  },
+  {
+    "page": 22,
+    "page_description": "9 Optimizing and satisficing metrics Here’s another way to combine multiple evaluation metrics. Suppose you care about both the accuracy and the running time of...",
+    "content_preview": "9 Optimizing and satisficing metrics  \n \nHere’s another way to combine multiple evaluation metrics.  \nSuppose you care about both the accuracy and the running time of a learning algorithm. You \nneed to choose from these three classifiers:  \nClassifier  Accuracy  Running time \nA  90%  80ms \nB  92% 95"
+  },
+  {
+    "page": 23,
+    "page_description": "to minimize the false negative rate (optimizing metric), subject to there being no more than one false positive every 24 hours of operation (satisficing metric)....",
+    "content_preview": "to minimize the false negative rate (optimizing metric), subject to there being no more than \none false positive every 24 hours of operation (satisficing metric).  \nOnce your team is aligned on the evaluation metric to optimize, they will be able to make \nfaster progress.  \n \n \n \n \n \n \n \n \n \n \n  \nPa"
+  },
+  {
+    "page": 24,
+    "page_description": "10 Having a dev set and metric speeds up iterations It is very difficult to know in advance what approach will work best for a...",
+    "content_preview": "10 Having a dev set and metric speeds up \niterations \n \nIt is very difficult to know in advance what approach will work best for a new problem. Even \nexperienced machine learning researchers will usually try out many dozens of ideas before \nthey discover something satisfactory. When building a machi"
+  },
+  {
+    "page": 25,
+    "page_description": "11 When to change dev/test sets and metrics When starting out on a new project, I try to quickly choose dev/test sets, since this gives...",
+    "content_preview": "11 When to change dev/test sets and metrics  \n \nWhen starting out on a new project, I try to quickly choose dev/test sets, since this gives the \nteam a well-defined target to aim for.  \nI typically ask my teams to come up with an initial dev/test set and an initial metric in less \nthan one week—rare"
+  },
+  {
+    "page": 26,
+    "page_description": "2. You have overfit to the dev set. The process of repeatedly evaluating ideas on the dev set causes your algorithm to gradually “overfit” to...",
+    "content_preview": "2. You have overfit to the dev set. \nThe process of repeatedly evaluating ideas on the dev set causes your algorithm to gradually \n“overfit” to the dev set. When you are done developing, you will evaluate your system on the \ntest set. If you find that your dev set performance is much better than you"
+  },
+  {
+    "page": 27,
+    "page_description": "12 Takeaways: Setting up development and test sets • Choose dev and test sets from a distribution that reflects what data you expect to get...",
+    "content_preview": "12 Takeaways: Setting up development and \ntest sets \n \n• Choose dev and test sets from a distribution that reflects what data you expect to get in \nthe future and want to do well on. This may not be the same as your training data’s \ndistribution.  \n• Choose dev and test sets from the same distributi"
+  },
+  {
+    "page": 28,
+    "page_description": "Basic Error Analysis Page 28 Machine Learning Yearning-Draft Andrew Ng",
+    "content_preview": "Basic Error \nAnalysis \n \n   \nPage 28 Machine Learning Yearning-Draft Andrew Ng"
+  },
+  {
+    "page": 29,
+    "page_description": "13 Build your first system quickly, then iterate You want to build a new email anti-spam system. Your team has several ideas: • Collect a...",
+    "content_preview": "13 Build your first system quickly, then iterate \n \nYou want to build a new email anti-spam system. Your team has several ideas:  \n• Collect a huge training set of spam email. For example, set up a “honeypot”: deliberately \nsend fake email addresses to known spammers, so that you can automatically h"
+  },
+  {
+    "page": 30,
+    "page_description": "14 Error analysis: Look at dev set examples to evaluate ideas When you play with your cat app, you notice several examples where it mistakes...",
+    "content_preview": "14 Error analysis: Look at dev set examples to \nevaluate ideas \nWhen you play with your cat app, you notice several examples where it mistakes dogs for \ncats. Some dogs do look like cats!  \nA team member proposes incorporating 3rd party software that will make the system do \nbetter on dog images. Th"
+  },
+  {
+    "page": 31,
+    "page_description": "In contrast, if you find that 50% of the mistakes are dogs, then you can be more confident that the proposed project will have a...",
+    "content_preview": "In contrast, if you find that 50% of the mistakes are dogs, then you can be more confident \nthat the proposed project will have a big impact. It could boost accuracy from 90% to 95% (a \n50% relative reduction in error, from 10% down to 5%).  \nThis simple counting procedure of error analysis gives yo"
+  },
+  {
+    "page": 32,
+    "page_description": "15 Evaluating multiple ideas in parallel during error analysis Your team has several ideas for improving the cat detector: • Fix the problem of your...",
+    "content_preview": "15 Evaluating multiple ideas in parallel during \nerror analysis \n \nYour team has several ideas for improving the cat detector: \n• Fix the problem of your algorithm recognizing ​dogs​ as cats. \n• Fix the problem of your algorithm recognizing ​great cats​ (lions, panthers, etc.) as house \ncats (pets)."
+  },
+  {
+    "page": 33,
+    "page_description": "picture correctly will often inspire you to come up with new categories of errors and solutions. The most helpful error categories will be ones that...",
+    "content_preview": "picture correctly will often inspire you to come up with new categories of errors and \nsolutions.  \nThe most helpful error categories will be ones that you have an idea for improving. For \nexample, the Instagram category will be most helpful to add if you have an idea to “undo” \nInstagram filters an"
+  },
+  {
+    "page": 34,
+    "page_description": "16 Cleaning up mislabeled dev and test set examples During error analysis, you might notice that some examples in your dev set are mislabeled. When...",
+    "content_preview": "16 Cleaning up mislabeled dev and test set \nexamples \n \nDuring error analysis, you might notice that some examples in your dev set are mislabeled. \nWhen I say “mislabeled” here, I mean that the pictures were already mislabeled by a human \nlabeler even before the algorithm encountered it. I.e., the c"
+  },
+  {
+    "page": 35,
+    "page_description": "• Overall accuracy on dev set.………………. 98.0% (2.0% overall error.) • Errors due to mislabeled examples……. 0.6%. (30% of dev set errors.) • Errors due...",
+    "content_preview": "• Overall accuracy on dev set.………………. 98.0% (2.0% overall error.) \n• Errors due to mislabeled examples……. 0.6%. (30% of dev set errors.)  \n• Errors due to other causes………………… 1.4% (70% of dev set errors) \n30% of your errors are due to the mislabeled dev set images, adding significant error to your \n"
+  },
+  {
+    "page": 36,
+    "page_description": "17 If you have a large dev set, split it into two subsets, only one of which you look at Suppose you have a large...",
+    "content_preview": "17 If you have a large dev set, split it into two \nsubsets, only one of which you look at  \n \nSuppose you have a large dev set of 5,000 examples in which you have a 20% error rate. \nThus, your algorithm is misclassifying ~1,000 dev images. It takes a long time to manually \nexamine 1,000 images, so w"
+  },
+  {
+    "page": 37,
+    "page_description": "Why do we explicitly separate the dev set into Eyeball and Blackbox dev sets? Since you will gain intuition about the examples in the Eyeball...",
+    "content_preview": "Why do we explicitly separate the dev set into Eyeball and Blackbox dev sets? Since you will \ngain intuition about the examples in the Eyeball dev set, you will start to overfit the Eyeball \ndev set faster. If you see the performance on the Eyeball dev set improving much more \nrapidly than the perfo"
+  },
+  {
+    "page": 38,
+    "page_description": "18 How big should the Eyeball and Blackbox dev sets be? Your Eyeball dev set should be large enough to give you a sense of...",
+    "content_preview": "18 How big should the Eyeball and Blackbox \ndev sets be? \nYour Eyeball dev set should be large enough to give you a sense of your algorithm’s major \nerror categories. If you are working on a task that humans do well (such as recognizing cats \nin images), here are some rough guidelines:  \n• An eyebal"
+  },
+  {
+    "page": 39,
+    "page_description": "How about the Blackbox dev set? We previously said that dev sets of around 1,000-10,000 examples are common. To refine that statement, a Blackbox dev...",
+    "content_preview": "How about the Blackbox dev set? We previously said that dev sets of around 1,000-10,000 \nexamples are common. To refine that statement, a Blackbox dev set of 1,000-10,000 \nexamples will often give you enough data to tune hyperparameters and select among models, \nthough there is little harm in having"
+  },
+  {
+    "page": 40,
+    "page_description": "19 Takeaways: Basic error analysis • When you start a new project, especially if it is in an area in which you are not an...",
+    "content_preview": "19 Takeaways: Basic error analysis \n \n• When you start a new project, especially if it is in an area in which you are not an expert, \nit is hard to correctly guess the most promising directions.  \n• So don’t start off trying to design and build the perfect system. Instead build and train a \nbasic sy"
+  },
+  {
+    "page": 41,
+    "page_description": "Bias and Variance Page 41 Machine Learning Yearning-Draft Andrew Ng",
+    "content_preview": "Bias and Variance \n \n \n \n \n \n  \nPage 41 Machine Learning Yearning-Draft Andrew Ng"
+  },
+  {
+    "page": 42,
+    "page_description": "20 Bias and Variance: The two big sources of error Suppose your training, dev and test sets all come from the same distribution. Then you...",
+    "content_preview": "20 Bias and Variance: The two big sources of \nerror \n \nSuppose your training, dev and test sets all come from the same distribution. Then you \nshould always try to get more training data, since that can only improve performance, right? \nEven though having more data can’t hurt, unfortunately it doesn"
+  },
+  {
+    "page": 43,
+    "page_description": "Some changes to a learning algorithm can address the first component of error—​bias​—and improve its performance on the training set. Some changes address the second...",
+    "content_preview": "Some changes to a learning algorithm can address the first component of error—​bias​—and \nimprove its performance on the training set. Some changes address the second \ncomponent—​variance​—and help it generalize better from the training set to the dev/test \nsets.  To select the most promising change"
+  },
+  {
+    "page": 44,
+    "page_description": "21 Examples of Bias and Variance Consider our cat classification task. An “ideal” classifier (such as a human) might achieve nearly perfect performance in this...",
+    "content_preview": "21 Examples of Bias and Variance \n \nConsider our cat classification task. An “ideal” classifier (such as a human) might achieve \nnearly perfect performance in this task.  \nSuppose your algorithm performs as follows: \n• Training error = 1% \n• Dev error = 11% \nWhat problem does it have? Applying the d"
+  },
+  {
+    "page": 45,
+    "page_description": "Finally, consider this: • Training error = 0.5% • Dev error = 1% This classifier is doing well, as it has low bias and low...",
+    "content_preview": "Finally, consider this:  \n• Training error = 0.5% \n• Dev error = 1% \nThis classifier is doing well, as it has low bias and low variance. Congratulations on achieving \nthis great performance!  \n  \nPage 45 Machine Learning Yearning-Draft Andrew Ng"
+  },
+  {
+    "page": 46,
+    "page_description": "22 Comparing to the optimal error rate In our cat recognition example, the “ideal” error rate—that is, one achievable by an “optimal” classifier—is nearly 0%....",
+    "content_preview": "22 Comparing to the optimal error rate \n \nIn our cat recognition example, the “ideal” error rate—that is, one achievable by an “optimal” \nclassifier—is nearly 0%. A human looking at a picture would be able to recognize if it \ncontains a cat almost all the time; thus, we can hope for a machine that w"
+  },
+  {
+    "page": 47,
+    "page_description": "• Avoidable bias​: 1%. This is calculated as the difference between the training error and the optimal error rate. 8 • Variance​: 15%. The difference...",
+    "content_preview": "• Avoidable bias​: 1%. This is calculated as the difference between the training error and \nthe optimal error rate.  \n8\n• Variance​: 15%. The difference between the dev error and the training error.  \nTo relate this to our earlier definitions, Bias and Avoidable Bias are related as follows:   \n9\nBia"
+  },
+  {
+    "page": 48,
+    "page_description": "humans have a hard time solving (e.g., predicting what movie to recommend, or what ad to show to a user) it can be hard to...",
+    "content_preview": "humans have a hard time solving (e.g., predicting what movie to recommend, or what ad to \nshow to a user) it can be hard to estimate the optimal error rate.  \nIn the section “Comparing to Human-Level Performance (Chapters 33 to 35), I will discuss \nin more detail the process of comparing a learning "
+  },
+  {
+    "page": 49,
+    "page_description": "23 Addressing Bias and Variance Here is the simplest formula for addressing bias and variance issues: • If you have high avoidable bias, increase the...",
+    "content_preview": "23 Addressing Bias and Variance \n \nHere is the simplest formula for addressing bias and variance issues: \n• If you have high avoidable bias, increase the size of your model (for example, increase the \nsize of your neural network by adding layers/neurons). \n• If you have high variance, add data to yo"
+  },
+  {
+    "page": 50,
+    "page_description": "24 Bias vs. Variance tradeoff You might have heard of the “Bias vs. Variance tradeoff.” Of the changes you could make to most learning algorithms,...",
+    "content_preview": "24 Bias vs. Variance tradeoff \n \nYou might have heard of the “Bias vs. Variance tradeoff.” Of the changes you could make to \nmost learning algorithms, there are some that reduce bias errors but at the cost of increasing \nvariance, and vice versa. This creates a “trade off” between bias and variance."
+  },
+  {
+    "page": 51,
+    "page_description": "25 Techniques for reducing avoidable bias If your learning algorithm suffers from high avoidable bias, you might try the following techniques: • Increase the model...",
+    "content_preview": "25 Techniques for reducing avoidable bias \n \nIf your learning algorithm suffers from high avoidable bias, you might try the following \ntechniques:  \n• Increase the model size ​(such as number of neurons/layers): This technique reduces \nbias, since it should allow you to fit the training set better. "
+  },
+  {
+    "page": 52,
+    "page_description": "26 Error analysis on the training set Your algorithm must perform well on the training set before you can expect it to perform well on...",
+    "content_preview": "26 Error analysis on the training set \n \nYour algorithm must perform well on the training set before you can expect it to perform \nwell on the dev/test sets.  \nIn addition to the techniques described earlier to address high bias, I sometimes also carry \nout an error analysis on the ​training data​, "
+  },
+  {
+    "page": 53,
+    "page_description": "27 Techniques for reducing variance If your learning algorithm suffers from high variance, you might try the following techniques: • Add more training data​: This...",
+    "content_preview": "27 Techniques for reducing variance \n \nIf your learning algorithm suffers from high variance, you might try the following \ntechniques:  \n• Add more training data​: This is the simplest and most reliable way to address variance, \nso long as you have access to significantly more data and enough comput"
+  },
+  {
+    "page": 54,
+    "page_description": "theory, adding more features could increase the variance; but if you find this to be the case, then use regularization, which will usually eliminate the...",
+    "content_preview": "theory, adding more features could increase the variance; but if you find this to be the case, \nthen use regularization, which will usually eliminate the increase in variance.  \n• Modify model architecture​ (such as neural network architecture) so that it is more \nsuitable for your problem: This tec"
+  },
+  {
+    "page": 55,
+    "page_description": "Learning curves Page 55 Machine Learning Yearning-Draft Andrew Ng",
+    "content_preview": "Learning curves \n \n   \nPage 55 Machine Learning Yearning-Draft Andrew Ng"
+  },
+  {
+    "page": 56,
+    "page_description": "28 Diagnosing bias and variance: Learning curves We’ve seen some ways to estimate how much error can be attributed to avoidable bias vs. variance. We...",
+    "content_preview": "28 Diagnosing bias and variance: Learning \ncurves  \n \nWe’ve seen some ways to estimate how much error can be attributed to avoidable bias vs. \nvariance. We did so by estimating the optimal error rate and computing the algorithm’s \ntraining set and dev set errors. Let’s discuss a technique that is ev"
+  },
+  {
+    "page": 57,
+    "page_description": "• If you have worked on a important application for a long time, then you might have intuition about how much more progress you can...",
+    "content_preview": "• If you have worked on a important application for a long time, then you might have \nintuition about how much more progress you can reasonably make in the next \nquarter/year.  \nAdd the desired level of performance to your learning curve:  \n \n \n \n \n \n \n \nYou can visually extrapolate the red “dev err"
+  },
+  {
+    "page": 58,
+    "page_description": "One downside of this process is that if you only look at the dev error curve, it can be hard to extrapolate and predict exactly...",
+    "content_preview": "One downside of this process is that if you only look at the dev error curve, it can be hard to \nextrapolate and predict exactly where the red curve will go if you had more data. There is one \nadditional plot that can help you estimate the impact of adding more data: the training error. \nPage 58 Mac"
+  },
+  {
+    "page": 59,
+    "page_description": "29 Plotting training error Your dev set (and test set) error should decrease as the training set size grows. But your training set error usually...",
+    "content_preview": "29 Plotting training error \n \nYour dev set (and test set) error should decrease as the training set size grows. But your \ntraining set error usually ​increases​ as the training set size grows.  \nLet’s illustrate this effect with an example. Suppose your training set has only 2 examples: \nOne cat ima"
+  },
+  {
+    "page": 60,
+    "page_description": "30 Interpreting learning curves: High bias Suppose your dev error curve looks like this: We previously said that, if your dev error curve plateaus, you...",
+    "content_preview": "30 Interpreting learning curves: High bias \n \nSuppose your dev error curve looks like this:  \n \n \n \n \n \n \nWe previously said that, if your dev error curve plateaus, you are unlikely to achieve the \ndesired performance just by adding data.  \nBut it is hard to know exactly what an extrapolation of the"
+  },
+  {
+    "page": 61,
+    "page_description": "• As we add more training data, training error can only get worse. Thus, the blue training error curve can only stay the same or...",
+    "content_preview": "• As we add more training data, training error can only get worse. Thus, the blue training \nerror curve can only stay the same or go higher, and thus it can only get further away from \nthe (green line) level of desired performance.  \n• The red dev error curve is usually higher than the blue training"
+  },
+  {
+    "page": 62,
+    "page_description": "31 Interpreting learning curves: Other cases Consider this learning curve: Does this plot indicate high bias, high variance, or both? The blue training error curve...",
+    "content_preview": "31 Interpreting learning curves: Other cases  \n \nConsider this learning curve:  \n \nDoes this plot indicate high bias, high variance, or both? \nThe blue training error curve is relatively low, and the red dev error curve is much higher \nthan the blue training error. Thus, the bias is small, but the v"
+  },
+  {
+    "page": 63,
+    "page_description": "32 Plotting learning curves Suppose you have a very small training set of 100 examples. You train your algorithm using a randomly chosen subset of...",
+    "content_preview": "32 Plotting learning curves \n \nSuppose you have a very small training set of 100 examples. You train your algorithm using a \nrandomly chosen subset of 10 examples, then 20 examples, then 30, up to 100, increasing \nthe number of examples by intervals of ten. You then use these 10 data points to plot "
+  },
+  {
+    "page": 64,
+    "page_description": "negative. More generally, you can make sure the fraction of examples from each class is as close as possible to the overall fraction in the...",
+    "content_preview": "negative. More generally, you can make sure the fraction of examples from each class is as \nclose as possible to the overall fraction in the original training set.  \nI would not bother with either of these techniques unless you have already tried plotting \nlearning curves and concluded that the curv"
+  },
+  {
+    "page": 65,
+    "page_description": "Comparing to human-level performance Page 65 Machine Learning Yearning-Draft Andrew Ng",
+    "content_preview": "Comparing to \nhuman-level \nperformance \n \n \n  \nPage 65 Machine Learning Yearning-Draft Andrew Ng"
+  },
+  {
+    "page": 66,
+    "page_description": "33 Why we compare to human-level performance Many machine learning systems aim to automate things that humans do well. Examples include image recognition, speech recognition,...",
+    "content_preview": "33 Why we compare to human-level \nperformance  \n \nMany machine learning systems aim to automate things that humans do well. Examples \ninclude image recognition, speech recognition, and email spam classification. Learning \nalgorithms have also improved so much that we are now surpassing human-level \n"
+  },
+  {
+    "page": 67,
+    "page_description": "• Human intuition is harder to count on.​ For example, pretty much no one can predict the stock market. So if our stock prediction algorithm...",
+    "content_preview": "• Human intuition is harder to count on.​ For example, pretty much no one can \npredict the stock market. So if our stock prediction algorithm does no better than random \nguessing, it is hard to figure out how to improve it.  \n• It is hard to know what the optimal error rate and reasonable desired er"
+  },
+  {
+    "page": 68,
+    "page_description": "34 How to define human-level performance Suppose you are working on a medical imaging application that automatically makes diagnoses from x-ray images. A typical person...",
+    "content_preview": "34 How to define human-level performance  \n \nSuppose you are working on a medical imaging application that automatically makes \ndiagnoses from x-ray images. A typical person with no previous medical background besides \nsome basic training achieves 15% error on this task. A junior doctor achieves 10%"
+  },
+  {
+    "page": 69,
+    "page_description": "35 Surpassing human-level performance You are working on speech recognition and have a dataset of audio clips. Suppose your dataset has many noisy audio clips...",
+    "content_preview": "35 Surpassing human-level performance  \n \nYou are working on speech recognition and have a dataset of audio clips. Suppose your \ndataset has many noisy audio clips so that even humans have 10% error. Suppose your \nsystem already achieves 8% error. Can you use any of the three techniques described in"
+  },
+  {
+    "page": 70,
+    "page_description": "Training and testing on different distributions Page 70 Machine Learning Yearning-Draft Andrew Ng",
+    "content_preview": "Training and \ntesting on different \ndistributions \n \n \n \n \n \n \n \n \n   \nPage 70 Machine Learning Yearning-Draft Andrew Ng"
+  },
+  {
+    "page": 71,
+    "page_description": "36 When you should train and test on different distributions Users of your cat pictures app have uploaded 10,000 images, which you have manually labeled...",
+    "content_preview": "36 When you should train and test on \ndifferent distributions \n \nUsers of your cat pictures app have uploaded 10,000 images, which you have manually \nlabeled as containing cats or not. You also have a larger set of 200,000 images that you \ndownloaded off the internet. How should you define train/dev"
+  },
+  {
+    "page": 72,
+    "page_description": "But in the era of big data, we now have access to huge training sets, such as cat internet images. Even if the training set...",
+    "content_preview": "But in the era of big data, we now have access to huge training sets, such as cat internet \nimages. Even if the training set comes from a different distribution than the dev/test set, we \nstill want to use it for learning since it can provide a lot of information. \nFor the cat detector example, inst"
+  },
+  {
+    "page": 73,
+    "page_description": "37 How to decide whether to use all your data Suppose your cat detector’s training set includes 10,000 user-uploaded images. This data comes from the...",
+    "content_preview": "37 How to decide whether to use all your data \n \nSuppose your cat detector’s training set includes 10,000 user-uploaded images. This data \ncomes from the same distribution as a separate dev/test set, and represents the distribution \nyou care about doing well on. You also have an additional 20,000 im"
+  },
+  {
+    "page": 74,
+    "page_description": "To describe the second effect in different terms, we can turn to the fictional character Sherlock Holmes, who says that your brain is like an...",
+    "content_preview": "To describe the second effect in different terms, we can turn to the fictional character \nSherlock Holmes, who says that your brain is like an attic; it only has a finite amount of \nspace. He says that “for every addition of knowledge, you forget something that you knew \nbefore. It is of the highest"
+  },
+  {
+    "page": 75,
+    "page_description": "38 How to decide whether to include inconsistent data Suppose you want to learn to predict housing prices in New York City. Given the size...",
+    "content_preview": "38 How to decide whether to include \ninconsistent data \n \nSuppose you want to learn to predict housing prices in New York City. Given the size of a \nhouse (input feature x), you want to predict the price (target label y).  \nHousing prices in New York City are very high. Suppose you have a second dat"
+  },
+  {
+    "page": 76,
+    "page_description": "39 Weighting data Suppose you have 200,000 images from the internet and 5,000 images from your mobile app users. There is a 40:1 ratio between...",
+    "content_preview": "39 Weighting data  \n \nSuppose you have 200,000 images from the internet and 5,000 images from your mobile \napp users. There is a 40:1 ratio between the size of these datasets. In theory, so long as you \nbuild a huge neural network and train it long enough on all 205,000 images, there is no \nharm in "
+  },
+  {
+    "page": 77,
+    "page_description": "40 Generalizing from the training set to the dev set Suppose you are applying ML in a setting where the training and the dev/test distributions...",
+    "content_preview": "40 Generalizing from the training set to the \ndev set \n \nSuppose you are applying ML in a setting where the training and the dev/test distributions \nare different. Say, the training set contains Internet images + Mobile images, and the \ndev/test sets contain only Mobile images. However, the algorith"
+  },
+  {
+    "page": 78,
+    "page_description": "• Training set. This is the data that the algorithm will learn from (e.g., Internet images + Mobile images). This does not have to be...",
+    "content_preview": "• Training set. This is the data that the algorithm will learn from (e.g., Internet images + \nMobile images). This does not have to be drawn from the same distribution as what we \nreally care about (the dev/test set distribution). \n• Training dev set: This data is drawn from the same distribution as"
+  },
+  {
+    "page": 79,
+    "page_description": "41 Identifying Bias, Variance, and Data Mismatch Errors Suppose humans achieve almost perfect performance (≈0% error) on the cat detection task, and thus the optimal...",
+    "content_preview": "41 Identifying Bias, Variance, and Data \nMismatch Errors  \n \nSuppose humans achieve almost perfect performance (≈0% error) on the cat detection task, \nand thus the optimal error rate is about 0%. Suppose you have: \n• 1% error on the training set. \n• 5% error on training dev set.  \n• 5% error on the "
+  },
+  {
+    "page": 80,
+    "page_description": "Continuing with the example of th​e cat image detector, you can see that there are two different distributions of data on the x-axis. On the...",
+    "content_preview": "Continuing with the example of th​e cat image detector, you can see that there are two \ndifferent distributions of data on the x-axis. On the y-axis, we ha​ve three types of error: \nhuman level error, error on examples the algorithm has trained on, and error on examples \nthe algorithm has not traine"
+  },
+  {
+    "page": 81,
+    "page_description": "42 Addressing data mismatch Suppose you have developed a speech recognition system that does very well on the training set and on the training dev...",
+    "content_preview": "42 Addressing data mismatch \n \nSuppose you have developed a speech recognition system that does very well on the training \nset and on the training dev set. However, it does poorly on your dev set: You have a data \nmismatch problem. What can you do?  \nI recommend that you: (i) Try to understand what "
+  },
+  {
+    "page": 82,
+    "page_description": "43 Artificial data synthesis Your speech system needs more data that sounds as if it were taken from within a car. Rather than collecting a...",
+    "content_preview": "43 Artificial data synthesis \n \nYour speech system needs more data that sounds as if it were taken from within a car. Rather \nthan collecting a lot of data while driving around, there might be an easier way to get this \ndata: By artificially synthesizing it. \nSuppose you obtain a large quantity of c"
+  },
+  {
+    "page": 83,
+    "page_description": "To take one more example, suppose you are building a computer vision system to recognize cars. Suppose you partner with a video gaming company, which...",
+    "content_preview": "To take one more example, suppose you are building a computer vision system to recognize \ncars. Suppose you partner with a video gaming company, which has computer graphics \nmodels of several cars. To train your algorithm, you use the models to generate synthetic \nimages of cars. Even if the synthes"
+  },
+  {
+    "page": 84,
+    "page_description": "Debugging inference algorithms Page 84 Machine Learning Yearning-Draft Andrew Ng",
+    "content_preview": "Debugging \ninference \nalgorithms \n \n \n \n   \nPage 84 Machine Learning Yearning-Draft Andrew Ng"
+  },
+  {
+    "page": 85,
+    "page_description": "44 The Optimization Verification test Suppose you are building a speech recognition system. Your system works by inputting an audio clip ​A​, and computing some...",
+    "content_preview": "44 The Optimization Verification test \n \nSuppose you are building a speech recognition system. Your system works by inputting an \naudio clip ​A​, and computing some Score​A​(​S​) for each possible output sentence ​S​. For \nexample, you might try to estimate Score​A​(​S​) = P(​S​|​A​), the probabilit"
+  },
+  {
+    "page": 86,
+    "page_description": "Let S​out​ be the output transcription (“I love robots”). Let S* be the correct transcription (“I love machine learning”). In order to understand whether #1...",
+    "content_preview": "Let S​out​ be the output transcription (“I love robots”). Let S* be the correct transcription (“I \nlove machine learning”). In order to understand whether #1 or #2 above is the problem, you \ncan perform the ​Optimization Verification test​: First, compute Score​A​(​S​*) and \nScore​A​(​S​out​). Then "
+  },
+  {
+    "page": 87,
+    "page_description": "45 General form of Optimization Verification test You can apply the Optimization Verification test when, given some input ​x​, you know how to compute Score​x​(​y​)...",
+    "content_preview": "45 General form of Optimization Verification \ntest \n \nYou can apply the Optimization Verification test when, given some input ​x​, you know how  to \ncompute Score​x​(​y​) that indicates how good a response ​y​ is to an input ​x​. Furthermore, you \nare using an approximate algorithm to try to find ar"
+  },
+  {
+    "page": 88,
+    "page_description": "46 Reinforcement learning example Suppose you are using machine learning to teach a helicopter to fly complex maneuvers. Here is a time-lapse photo of a...",
+    "content_preview": "46 Reinforcement learning example \n \nSuppose you are using machine learning to teach a helicopter to fly complex maneuvers. \nHere is a time-lapse photo of a computer-controller helicopter executing a landing with the \nengine turned off. \nThis is called an “autorotation” maneuver. It allows helicopte"
+  },
+  {
+    "page": 89,
+    "page_description": "Given a reward function ​R(T), ​the job of the reinforcement learning algorithm is to control the helicopter so that it achieves max​T​ R(T). ​However, reinforcement...",
+    "content_preview": "Given a reward function ​R(T), ​the job of the reinforcement learning algorithm is to control \nthe helicopter so that it  achieves max​T​ R(T). ​However, reinforcement learning algorithms \nmake many approximations and may not succeed in achieving this maximization.  \nSuppose you have picked some rew"
+  },
+  {
+    "page": 90,
+    "page_description": "End-to-end deep learning Page 90 Machine Learning Yearning-Draft Andrew Ng",
+    "content_preview": "End-to-end \ndeep learning \n \n \n \n \n   \nPage 90 Machine Learning Yearning-Draft Andrew Ng"
+  },
+  {
+    "page": 91,
+    "page_description": "47 The rise of end-to-end learning Suppose you want to build a system to examine online product reviews and automatically tell you if the writer...",
+    "content_preview": "47 The rise of end-to-end learning \n \nSuppose you want to build a system to examine online product reviews and automatically tell \nyou if the writer liked or disliked that product. For example, you hope to recognize the \nfollowing review as highly positive:  \nThis is a great mop!  \nand the following"
+  },
+  {
+    "page": 92,
+    "page_description": "Neural networks are commonly used in end-to-end learning systems. The term “end-to-end” refers to the fact that we are asking the learning algorithm to go...",
+    "content_preview": "Neural networks are commonly used in end-to-end learning systems. The term “end-to-end” \nrefers to the fact that we are asking the learning algorithm to go directly from the input to \nthe desired output. I.e., the learning algorithm directly connects the “input end” of the \nsystem to the “output end"
+  },
+  {
+    "page": 93,
+    "page_description": "48 More end-to-end learning examples Suppose you want to build a speech recognition system. You might build a system with three components: The components work...",
+    "content_preview": "48 More end-to-end learning examples  \n \nSuppose you want to build a speech recognition system. You might build a system with three \ncomponents:  \n \n \n \nThe components work as follows:  \n1. Compute features: Extract hand-designed features, such as MFCC (​Mel-frequency \ncepstrum coefficients) feature"
+  },
+  {
+    "page": 94,
+    "page_description": "It has three components: One detects other cars using the camera images; one detects pedestrians; then a final component plans a path for our own...",
+    "content_preview": "It has three components: One detects other cars using the camera images; one detects \npedestrians; then a final component plans a path for our own car that avoids the cars and \npedestrians.  \nNot every component in a pipeline has to be learned. For example, the literature on “robot \nmotion planning”"
+  },
+  {
+    "page": 95,
+    "page_description": "49 Pros and cons of end-to-end learning Consider the same speech pipeline from our earlier example: Many parts of this pipeline were “hand-engineered”: • MFCCs...",
+    "content_preview": "49 Pros and cons of end-to-end learning  \n \nConsider the same speech pipeline from our earlier example: \nMany parts of this pipeline were “hand-engineered”: \n• MFCCs are a set of hand-designed audio features. Although they provide a reasonable \nsummary of the audio input, they also simplify the inpu"
+  },
+  {
+    "page": 96,
+    "page_description": "This system lacks the hand-engineered knowledge. Thus, when the training set is small, it might do worse than the hand-engineered pipeline. However, when the training...",
+    "content_preview": "This system lacks the hand-engineered knowledge. Thus, when the training set is small, it \nmight do worse than the hand-engineered pipeline.  \nHowever, when the training set is large, then it is not hampered by the limitations of an \nMFCC or phoneme-based representation. If the learning algorithm is"
+  },
+  {
+    "page": 97,
+    "page_description": "50 Choosing pipeline components: Data availability When building a non-end-to-end pipeline system, what are good candidates for the components of the pipeline? How you design...",
+    "content_preview": "50 Choosing pipeline components: Data \navailability \n \nWhen building a non-end-to-end pipeline system, what are good candidates for the \ncomponents of the pipeline? How you design the pipeline will greatly impact the overall \nsystem’s performance. One important factor is whether you can easily colle"
+  },
+  {
+    "page": 98,
+    "page_description": "pipeline with multiple stages. This structure could be superior because you could use all that available data to train the intermediate modules. Until more end-to-end...",
+    "content_preview": "pipeline with multiple stages. This structure could be superior because you could use all that \navailable data to train the intermediate modules.  \nUntil more end-to-end data becomes available, I believe the non-end-to-end approach is \nsignificantly more promising for autonomous driving: Its archite"
+  },
+  {
+    "page": 99,
+    "page_description": "51 Choosing pipeline components: Task simplicity Other than data availability, you should also consider a second factor when picking components of a pipeline: How simple...",
+    "content_preview": "51 Choosing pipeline components: Task \nsimplicity  \n \nOther than data availability, you should also consider a second factor when picking \ncomponents of a pipeline: How simple are the tasks solved by the individual components? \nYou should try to choose pipeline components that are individually easy "
+  },
+  {
+    "page": 100,
+    "page_description": "If you are able to take a complex task, and break it down into simpler sub-tasks, then by coding in the steps of the sub-tasks...",
+    "content_preview": "If you are able to take a complex task, and break it down into simpler sub-tasks, then by \ncoding in the steps of the sub-tasks explicitly, you are giving the algorithm prior knowledge \nthat can help it learn a task more efficiently.  \n \nSuppose you are building a Siamese cat detector. This is the p"
+  },
+  {
+    "page": 101,
+    "page_description": "The second step then passes cropped images of each of the detected cats (one at a time) to a cat species classifier, and finally outputs...",
+    "content_preview": "The second step then passes cropped images of each of the detected cats (one at a time) to a \ncat species classifier, and finally outputs 1 if any of the cats detected is a Siamese cat. \n \nCompared to training a purely end-to-end classifier using just labels 0/1, each of the two \ncomponents in the p"
+  },
+  {
+    "page": 102,
+    "page_description": "As one final example, let’s revisit the autonomous driving pipeline. By using this pipeline, you are telling the algorithm that there are 3 key steps...",
+    "content_preview": "As one final example, let’s revisit the autonomous driving pipeline.  \n \n \n \n \n \n \n \nBy using this pipeline, you are telling the algorithm that there are 3 key steps to driving: (1) \nDetect other cars, (2) Detect pedestrians, and (3) Plan a path for your car. Further, each of \nthese is a relatively "
+  },
+  {
+    "page": 103,
+    "page_description": "52 Directly learning rich outputs An image classification algorithm will input an image ​x​, and output an integer indicating the object category. Can an algorithm...",
+    "content_preview": "52 Directly learning rich outputs \n \nAn image classification algorithm will input an image ​x​, and output an integer indicating the \nobject category. Can an algorithm instead output an entire sentence describing the image?  \nFor example:  \n \n \nx​ =  \n \n \ny​ = “A yellow bus driving down a road with "
+  },
+  {
+    "page": 104,
+    "page_description": "Here are more examples: Problem X Y Example Citation Image captioning Image Text Mao et al., 2014 Machine translation English text French text Suskever et...",
+    "content_preview": "Here are more examples: \nProblem  X  Y  Example Citation \nImage captioning  Image  Text  Mao et al., 2014 \nMachine translation  English text  French text  Suskever et al., 2014 \nQuestion answering  (Text,Question) pair   Answer text  Bordes et al., 2015 \nSpeech recognition  Audio  Transcription  Han"
+  },
+  {
+    "page": 105,
+    "page_description": "Error analysis by parts Page 105 Machine Learning Yearning-Draft Andrew Ng",
+    "content_preview": "Error analysis \nby parts \n \n \n \n \n \n \n \n \n \n \n \n \nPage 105 Machine Learning Yearning-Draft Andrew Ng"
+  },
+  {
+    "page": 106,
+    "page_description": "53 Error analysis by parts Suppose your system is built using a complex machine learning pipeline, and you would like to improve the system’s performance....",
+    "content_preview": "53 Error analysis by parts  \n \nSuppose your system is built using a complex machine learning pipeline, and you would like \nto improve the system’s performance. Which part of the pipeline should you work on \nimproving? By attributing errors to specific parts of the pipeline, you can decide how to \npr"
+  },
+  {
+    "page": 107,
+    "page_description": "This means that the cat breed classifier is given the following image: The cat breed classifier then correctly classifies this image as not containing a...",
+    "content_preview": "This means that the cat breed classifier is given the following image:  \n \n The cat breed classifier then correctly classifies this image as not containing a Siamese cat. \nThus, the cat breed classifier is blameless: It was given of a pile of rocks and outputted a very \nreasonable label y=0. Indeed,"
+  },
+  {
+    "page": 108,
+    "page_description": "Further, you have now also conveniently found 90 examples where the cat detector outputted incorrect bounding boxes. You can use these 90 examples to carry...",
+    "content_preview": "Further, you have now also conveniently found 90 examples where the cat detector \noutputted incorrect bounding boxes. You can use these 90 examples to carry out a deeper \nlevel of error analysis on the cat detector to see how to improve that.  \n \nOur description of how you attribute error to one par"
+  },
+  {
+    "page": 109,
+    "page_description": "54 Attributing error to one part Let’s continue to use this example: Suppose the cat detector outputted this bounding box: The cat breed classifier is...",
+    "content_preview": "54 Attributing error to one part  \n \nLet’s continue to use this example: \n  \nSuppose the cat detector outputted this bounding box:  \n \n \n \nThe cat breed classifier is thus given this cropped image, whereupon it incorrectly outputs \ny=0, or that there is no cat in the picture.  \n \nThe cat detector di"
+  },
+  {
+    "page": 110,
+    "page_description": "2. Run the corresponding cropped image through the cat breed classifier. If the cat breed classifier still misclassifies it, attribute the error to the cat...",
+    "content_preview": "2. Run the corresponding cropped image through the cat breed classifier. If the cat breed \nclassifier still misclassifies it, attribute the error to the cat breed classifier. Otherwise, \nattribute the error to the cat detector.  \n \nIn other words, run an experiment in which you give the cat breed cl"
+  },
+  {
+    "page": 111,
+    "page_description": "55 General case of error attribution Here are the general steps for error attribution. Suppose the pipeline has three steps A, B and C, where...",
+    "content_preview": "55 General case of error attribution  \n \nHere are the general steps for error attribution. Suppose the pipeline has three steps A, B \nand C, where A feeds directly into B, and B feeds directly into C.  \n \n \n \nFor each mistake the system makes on the dev set: \n \n1. Try manually modifying A’s output t"
+  },
+  {
+    "page": 112,
+    "page_description": "Following the procedure described above, suppose you test out your car on a closed track and find a case where the car chooses a more...",
+    "content_preview": "Following the procedure described above, suppose you test out your car on a closed track \nand find a case where the car chooses a more jarring steering direction than a skilled driver \nwould. In the self-driving world, such a case is usually called a ​scenario​. You would then: \n  \n1. Try manually m"
+  },
+  {
+    "page": 113,
+    "page_description": "56 Error analysis by parts and comparison to human-level performance Carrying out error analysis on a learning algorithm is like using data science to analyze...",
+    "content_preview": "56 Error analysis by parts and comparison to \nhuman-level performance  \n \nCarrying out error analysis on a learning algorithm is like using data science to analyze an \nML system’s mistakes in order to derive insights about what to do next. At its most basic, \nerror analysis by parts tells us what co"
+  },
+  {
+    "page": 114,
+    "page_description": "3. How far is the overall system’s performance from human-level performance? Here, human-level performance assumes the human has to plan a path for the car...",
+    "content_preview": "3. How far is the overall system’s performance from human-level performance? Here, \nhuman-level performance assumes the human has to plan a path for the car given \nonly the outputs from the previous two pipeline components (rather than access to \nthe camera images). In other words, how does the Plan"
+  },
+  {
+    "page": 115,
+    "page_description": "57 Spotting a flawed ML pipeline What if each individual component of your ML pipeline is performing at human-level performance or near-human-level performance, but the...",
+    "content_preview": "57 Spotting a flawed ML pipeline  \n \nWhat if each individual component of your ML pipeline is performing at human-level \nperformance or near-human-level performance, but the overall pipeline falls far short of \nhuman-level? This usually means that the pipeline is flawed and needs to be redesigned. \n"
+  },
+  {
+    "page": 116,
+    "page_description": "For example, suppose you realize that a human driver also needs to know the location of the lane markings. This suggests that you should redesign...",
+    "content_preview": "For example, suppose you realize that a human driver also needs to know the location of the \nlane markings. This suggests that you should redesign the pipeline as follows : 18\n \n \n \n \nUltimately, if you don’t think your pipeline as a whole will achieve human-level performance, \neven if every individ"
+  },
+  {
+    "page": 117,
+    "page_description": "Conclusion Page 117 Machine Learning Yearning-Draft Andrew Ng",
+    "content_preview": "Conclusion \n \n \n \n \n   \nPage 117 Machine Learning Yearning-Draft Andrew Ng"
+  },
+  {
+    "page": 118,
+    "page_description": "58 Building a superhero team - Get your teammates to read this Congratulations on finishing this book! In Chapter 2, we talked about how this...",
+    "content_preview": "58 Building a superhero team - Get your \nteammates to read this \n \nCongratulations on finishing this book!  \nIn Chapter 2, we talked about how this book can help you become the superhero of your \nteam. \n \nThe only thing better than being a superhero is being part of a superhero team. I hope you’ll \n"
+  }
+]

@@ -22,3 +22,13 @@ wheels/
 venv/
 env/
 
+# RAG local data, vector indices, and HuggingFace models caches
+data/
+!data/row/
+
+# Test coverage & Pytest cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+

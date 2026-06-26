@@ -1,0 +1,77 @@
+[
+  {
+    "query_id": "q_001",
+    "query": "What is machine learning and why does it matter?",
+    "relevant_chunk_ids": []
+  },
+  {
+    "query_id": "q_002",
+    "query": "How should I use this book to help my team?",
+    "relevant_chunk_ids": []
+  },
+  {
+    "query_id": "q_003",
+    "query": "What are the prerequisites and notation used in this book?",
+    "relevant_chunk_ids": []
+  },
+  {
+    "query_id": "q_004",
+    "query": "How does scale affect machine learning performance?",
+    "relevant_chunk_ids": []
+  },
+  {
+    "query_id": "q_005",
+    "query": "Who is Andrew Ng and what is Machine Learning Yearning?",
+    "relevant_chunk_ids": []
+  },
+  {
+    "query_id": "q_006",
+    "query": "Why is machine learning strategy important for AI teams?",
+    "relevant_chunk_ids": []
+  },
+  {
+    "query_id": "q_007",
+    "query": "What are best practices for deep learning projects?",
+    "relevant_chunk_ids": []
+  },
+  {
+    "query_id": "q_008",
+    "query": "How does dataset size affect model accuracy?",
+    "relevant_chunk_ids": []
+  },
+  {
+    "query_id": "q_009",
+    "query": "How do you set up a train, dev and test set?",
+    "relevant_chunk_ids": []
+  },
+  {
+    "query_id": "q_010",
+    "query": "How to build AI systems with machine learning components?",
+    "relevant_chunk_ids": []
+  },
+  {
+    "query_id": "q_011",
+    "query": "What is error analysis and how do you do it?",
+    "relevant_chunk_ids": []
+  },
+  {
+    "query_id": "q_012",
+    "query": "How do you diagnose bias and variance in ML models?",
+    "relevant_chunk_ids": []
+  },
+  {
+    "query_id": "q_013",
+    "query": "What is end-to-end learning in deep learning?",
+    "relevant_chunk_ids": []
+  },
+  {
+    "query_id": "q_014",
+    "query": "How do you handle mismatched train and test distributions?",
+    "relevant_chunk_ids": []
+  },
+  {
+    "query_id": "q_015",
+    "query": "What is transfer learning and when should you use it?",
+    "relevant_chunk_ids": []
+  }
+]

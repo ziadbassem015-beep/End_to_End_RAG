@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    container_name: rag_backend_api
+    ports:
+      - "8000:8000"
+    volumes:
+      # Persist uploaded books, vector indices, caches, and reports
+      - ./data:/app/data
+    env_file:
+      - .env
+    environment:
+      - PYTHONPATH=.
+      - UV_LINK_MODE=copy
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    container_name: rag_frontend_ui
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      # Anonymous volume to protect container's node_modules from being shadowed by host mount
+      - /app/node_modules
+    depends_on:
+      - backend
+    restart: unless-stopped

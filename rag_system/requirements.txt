@@ -1,0 +1,35 @@
+# ============================================================
+#  RAG System — Production Requirements
+# ============================================================
+
+# Core ML / Embeddings
+sentence-transformers>=3.0.1
+torch>=2.0.0
+transformers>=4.43.3
+
+# Document Loading
+langchain-community>=0.2.10
+langchain-core>=0.2.11
+langchain-text-splitters>=0.2.4
+pypdf>=4.3.1
+
+# BM25 (hybrid retrieval)
+rank-bm25>=0.2.2
+
+# Data & Math
+numpy>=1.26.4
+scipy>=1.13.0
+
+# Config
+pyyaml>=6.0.1
+python-dotenv>=1.0.1
+
+# CLI
+click>=8.1.7
+
+# Testing
+pytest>=8.3.2
+pytest-cov>=5.0.0
+
+# Utilities
+tqdm>=4.66.0

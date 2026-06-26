@@ -1,0 +1,83 @@
+# ============================================================
+#  RAG System — Default Configuration
+# ============================================================
+
+# ─── Ingestion ───────────────────────────────────────────────
+ingestion:
+  pdf_path: "data/row/andrew-ng-machine-learning-yearning.pdf"
+  output_dir: "data/output"
+  chunks_file: "chunks.json"
+
+# ─── Chunking ────────────────────────────────────────────────
+chunking:
+  chunk_size: 1600           # Characters per parent chunk
+  chunk_overlap: 300        # Overlap between parent chunks
+  child_chunk_size: 400      # Characters per child chunk (used for embeddings)
+  child_chunk_overlap: 100    # Overlap between child chunks
+  min_chunk_length: 50      # Discard chunks shorter than this
+  use_parent_child: true
+  parent_size: 1600
+  parent_overlap: 300
+  child_size: 400
+  child_overlap: 100
+  separators:
+    - "\n\n"
+    - "\n"
+    - ". "
+    - " "
+    - ""
+
+# ─── Embeddings ──────────────────────────────────────────────
+embeddings:
+  model: "BAAI/bge-large-en-v1.5"
+  batch_size: 32
+  normalize: true           # L2-normalize for cosine similarity
+  cache_dir: "data/cache/embeddings"
+  output_file: "data/output/embeddings.json"
+
+# ─── Retrieval ───────────────────────────────────────────────
+retrieval:
+  top_k: 10
+  similarity_threshold: 0.0  # Minimum score to include a result (0.0 = no filter)
+  use_parent_child: true
+  retrieval_pool_multiplier: 10
+  fusion_method: rrf
+  rrf_k: 60
+  use_query_expansion: true
+  query_variants: 4
+  use_hyde: true
+  use_metadata_filtering: true
+
+  reranker:
+    enabled: true
+    model: "BAAI/bge-reranker-large"
+
+  query_expansion:
+    enabled: true
+    method: "hyde"          # "hyde" or "multi_query"
+
+  # Hybrid retrieval weights
+  hybrid:
+    enabled: true
+    fusion_type: "rrf"
+    rrf_k: 60
+    alpha: 0.7              # Weight for semantic score; (1-alpha) for BM25
+    bm25_k1: 1.5
+    bm25_b: 0.75
+
+# ─── Evaluation ──────────────────────────────────────────────
+evaluation:
+  eval_dataset: "rag_system/eval/eval_dataset.json"
+  output_dir: "data/reports/evaluation"
+  top_k: 10
+  failing_threshold: 0.5    # NDCG below this = failing query
+
+# ─── Logging ─────────────────────────────────────────────────
+logging:
+  level: "INFO"             # DEBUG | INFO | WARNING | ERROR
+  format: "%(asctime)s | %(levelname)-8s | %(name)s | %(message)s"
+
+# ─── Vector Store ────────────────────────────────────────────
+vectorstore:
+  type: "faiss"
+  index_dir: "data/indices/faiss"

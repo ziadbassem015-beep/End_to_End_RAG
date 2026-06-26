@@ -1,6 +1,8 @@
 streamlit==1.35.0
 langchain==0.2.11
 langchain-community==0.2.10
+langchain-core==0.2.11
+langchain-text-splitters==0.2.4
 langchain-huggingface==0.0.3
 faiss-cpu==1.9.0.post1
 sentence-transformers==3.0.1
